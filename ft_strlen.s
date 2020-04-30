@@ -3,10 +3,10 @@
 ;                                                         ::::::::             ;
 ;    ft_strlen.s                                        :+:    :+:             ;
 ;                                                      +:+                     ;
-;    By: telly <telly@student.codam.nl>               +#+                      ;
+;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
-;    Created: 2020/04/16 14:48:39 by telly         #+#    #+#                  ;
-;    Updated: 2020/04/16 14:48:43 by telly         ########   odam.nl          ;
+;    Created: 2020/04/30 14:59:57 by abobas        #+#    #+#                  ;
+;    Updated: 2020/04/30 14:59:57 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 

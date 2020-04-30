@@ -3,10 +3,10 @@
 ;                                                         ::::::::             ;
 ;    ft_read.s                                          :+:    :+:             ;
 ;                                                      +:+                     ;
-;    By: telly <telly@student.codam.nl>               +#+                      ;
+;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
-;    Created: 2020/04/16 15:33:27 by telly         #+#    #+#                  ;
-;    Updated: 2020/04/30 01:46:48 by abobas        ########   odam.nl          ;
+;    Created: 2020/04/30 15:00:31 by abobas        #+#    #+#                  ;
+;    Updated: 2020/04/30 15:00:31 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 

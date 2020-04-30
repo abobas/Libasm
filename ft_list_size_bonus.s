@@ -3,10 +3,10 @@
 ;                                                         ::::::::             ;
 ;    ft_list_size_bonus.s                               :+:    :+:             ;
 ;                                                      +:+                     ;
-;    By: telly <telly@student.codam.nl>               +#+                      ;
+;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
-;    Created: 2020/04/16 21:01:28 by telly         #+#    #+#                  ;
-;    Updated: 2020/04/16 21:09:20 by telly         ########   odam.nl          ;
+;    Created: 2020/04/30 15:00:49 by abobas        #+#    #+#                  ;
+;    Updated: 2020/04/30 15:00:49 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 

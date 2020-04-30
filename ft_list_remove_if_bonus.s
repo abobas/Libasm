@@ -3,10 +3,10 @@
 ;                                                         ::::::::             ;
 ;    ft_list_remove_if_bonus.s                          :+:    :+:             ;
 ;                                                      +:+                     ;
-;    By: telly <telly@student.codam.nl>               +#+                      ;
+;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
-;    Created: 2020/04/18 13:44:15 by telly         #+#    #+#                  ;
-;    Updated: 2020/04/23 22:15:09 by telly         ########   odam.nl          ;
+;    Created: 2020/04/30 15:00:56 by abobas        #+#    #+#                  ;
+;    Updated: 2020/04/30 15:00:56 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 

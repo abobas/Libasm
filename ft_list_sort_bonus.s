@@ -3,10 +3,10 @@
 ;                                                         ::::::::             ;
 ;    ft_list_sort_bonus.s                               :+:    :+:             ;
 ;                                                      +:+                     ;
-;    By: telly <telly@student.codam.nl>               +#+                      ;
+;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
-;    Created: 2020/04/16 21:20:11 by telly         #+#    #+#                  ;
-;    Updated: 2020/04/19 22:58:53 by telly         ########   odam.nl          ;
+;    Created: 2020/04/30 15:00:41 by abobas        #+#    #+#                  ;
+;    Updated: 2020/04/30 15:00:41 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 

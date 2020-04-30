@@ -3,10 +3,10 @@
 ;                                                         ::::::::             ;
 ;    ft_strcmp.s                                        :+:    :+:             ;
 ;                                                      +:+                     ;
-;    By: telly <telly@student.codam.nl>               +#+                      ;
+;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
-;    Created: 2020/04/16 14:50:49 by telly         #+#    #+#                  ;
-;    Updated: 2020/04/16 14:56:41 by telly         ########   odam.nl          ;
+;    Created: 2020/04/30 15:00:24 by abobas        #+#    #+#                  ;
+;    Updated: 2020/04/30 15:00:24 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 

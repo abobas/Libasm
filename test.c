@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   test.c                                             :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: abobas <abobas@student.codam.nl>             +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2020/04/30 15:02:00 by abobas        #+#    #+#                 */
+/*   Updated: 2020/04/30 15:02:00 by abobas        ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -19,7 +31,6 @@ int         main(void)
     char    *s2 = malloc(sizeof(char) * 10);
     char    *s3 = malloc(sizeof(char) * 10);
     char    *s4 = malloc(sizeof(char) * 10);
-    char    *s5 = 0;
     char    *buf1 = malloc(sizeof(char) * 250);
     char    *buf2 = malloc(sizeof(char) * 250);
     s2 = "hallodoei";
@@ -75,9 +86,6 @@ int         main(void)
     b = ft_write(1, 0, 9);
 	perror("ft_write errno");
     printf("return write = %d\nreturn ft_write = %d\n", a, b);
-	a = write(1, s5, 1);
-    b = ft_write(1, s5, 1);
-    printf("return write = %d\nreturn ft_write = %d\n\n", a, b);
 
     ////////////////////FT_READ/////////////////////////
     int fd = open("ft_read.s", O_RDONLY);

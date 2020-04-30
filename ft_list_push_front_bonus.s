@@ -3,10 +3,10 @@
 ;                                                         ::::::::             ;
 ;    ft_list_push_front_bonus.s                         :+:    :+:             ;
 ;                                                      +:+                     ;
-;    By: telly <telly@student.codam.nl>               +#+                      ;
+;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
-;    Created: 2020/04/16 20:46:53 by telly         #+#    #+#                  ;
-;    Updated: 2020/04/23 23:39:08 by telly         ########   odam.nl          ;
+;    Created: 2020/04/30 15:01:02 by abobas        #+#    #+#                  ;
+;    Updated: 2020/04/30 15:01:02 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 

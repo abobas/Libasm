@@ -3,10 +3,10 @@
 ;                                                         ::::::::             ;
 ;    ft_atoi_base_bonus.s                               :+:    :+:             ;
 ;                                                      +:+                     ;
-;    By: telly <telly@student.codam.nl>               +#+                      ;
+;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
-;    Created: 2020/04/06 17:48:56 by telly         #+#    #+#                  ;
-;    Updated: 2020/04/16 20:20:48 by telly         ########   odam.nl          ;
+;    Created: 2020/04/30 15:01:10 by abobas        #+#    #+#                  ;
+;    Updated: 2020/04/30 15:01:10 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 
