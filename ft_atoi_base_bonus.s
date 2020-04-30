@@ -10,9 +10,9 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global  ft_atoi_base
+global  _ft_atoi_base
 
-ft_atoi_base:                                                   ; rdi = string, rsi = base
+_ft_atoi_base:                                                  ; rdi = string, rsi = base
                     mov         rbx, 0                          ; base length
                     cmp         rdi, 0
                     je          error

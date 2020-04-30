@@ -10,9 +10,9 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global  ft_strcpy
+global  _ft_strcpy
 
-ft_strcpy:                                  ;rdi = destination string, rsi = source string
+_ft_strcpy:                                 ;rdi = destination string, rsi = source string
                 mov     rbx, 0              ;index
                 cmp     rdi, 0              ;check first input string
                 je      error

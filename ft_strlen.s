@@ -10,9 +10,9 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global ft_strlen
+global _ft_strlen
 
-ft_strlen:                                  ;rdi = char string
+_ft_strlen:                                 ;rdi = string
                 mov     rax, 0
                 cmp     rdi, 0              ;check input string
                 je      return

@@ -10,17 +10,17 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global  ft_list_push_front
-extern  malloc
+global  _ft_list_push_front
+extern  _malloc
 
-ft_list_push_front:                                     ; rdi = begin_list, rsi = data
+_ft_list_push_front:                                    ; rdi = begin_list, rsi = data
                         cmp         rdi, 0
                         je          error
                         push        rdi
                         push        rsi
 allocate_element:
                         mov         rdi, 16             ; t_list = 16 bytes
-                        call        malloc              ; allocate new struct
+                        call        _malloc             ; allocate new struct
                         pop         rsi
                         pop         rdi
                         cmp         rax, 0              ; malloc protect

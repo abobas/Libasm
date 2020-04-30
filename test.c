@@ -3,6 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <errno.h>
+#include <limits.h>
 
 int         ft_strlen(char *str);
 char        *ft_strcpy(char *dst, char *src);
@@ -61,13 +63,19 @@ int         main(void)
     ft_write(1, "ft_write = ", 11);
     int b = ft_write(1, "Hello world!\n", 13);
     printf("return write = %d\nreturn ft_write = %d\n", a, b);
-    a = write(99, "Hello world!\n", 13);
-    b = ft_write(99, "Hello world!\n", 13);
+    a = write(FOPEN_MAX + 1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+	perror("write errno");
+	errno = 100;
+    b = ft_write(FOPEN_MAX + 1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+	perror("ft_write errno");
     printf("return write = %d\nreturn ft_write = %d\n", a, b);
-    a = write(1, 0, 9);
+	a = write(1, 0, 9);
+	perror("write errno");
+	errno = 100;
     b = ft_write(1, 0, 9);
+	perror("ft_write errno");
     printf("return write = %d\nreturn ft_write = %d\n", a, b);
-    a = write(1, s5, 1);
+	a = write(1, s5, 1);
     b = ft_write(1, s5, 1);
     printf("return write = %d\nreturn ft_write = %d\n\n", a, b);
 
@@ -80,7 +88,10 @@ int         main(void)
     printf("return read = %d\nreturn ft_read = %d\n", a, b);
     printf("strcmp(buffer_read, buffer_ft_read) = %d\n", ft_strcmp(buf1, buf2));
     a = read(333, buf1, 250);
+	perror("read errno");
+	errno = 100;
     b = ft_read(333, buf2, 250);
+	perror("ft_read errno");
     printf("return read = %d\nreturn ft_read = %d\n", a, b);
     printf("strcmp(buffer_read, buffer_ft_read) = %d\n", ft_strcmp(buf1, buf2));
     close(fd);
@@ -88,7 +99,10 @@ int         main(void)
     buf1 = 0;
     buf2 = 0;
     a = read(fd, buf1, 250);
+	perror("read errno");
+	errno = 100;
     b = ft_read(fd, buf2, 250);
+	perror("ft_read errno");
     printf("return read = %d\nreturn ft_read = %d\n\n", a, b);
 
     ////////////////////FT_STRDUP/////////////////////////

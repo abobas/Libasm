@@ -10,9 +10,9 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global ft_list_sort
+global _ft_list_sort
 
-ft_list_sort:                                   ; rdi = **begin_list, rsi = *strcmp
+_ft_list_sort:                                  ; rdi = **begin_list, rsi = *strcmp
                 cmp     rdi, 0                  ; check if address to first element exists
                 je      return
                 cmp     rsi, 0                  ; check if pointer to function exists

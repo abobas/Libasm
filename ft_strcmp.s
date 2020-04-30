@@ -10,9 +10,9 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global  ft_strcmp
+global  _ft_strcmp
 
-ft_strcmp:
+_ft_strcmp:
                 cmp     rdi, 0                      ;check first string
                 je      error_s1
                 cmp     rsi, 0                      ;check second string

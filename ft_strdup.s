@@ -10,10 +10,10 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global  ft_strdup
-extern  malloc
+global  _ft_strdup
+extern  _malloc
 
-ft_strdup:
+_ft_strdup:
                     cmp     rdi, 0                          ;check input string
                     je      error
                     mov     rcx, 0                          ;index
@@ -25,7 +25,9 @@ length:
 allocate:
                     mov     rbx, rdi                        ;save string in register rbx
                     mov     rdi, rcx                        ;argument malloc = size
-                    call    malloc
+                    push    rdi
+                    call    _malloc
+                    pop     rdi
                     cmp     rax, 0                          ;check malloc return value
                     je      error
                     mov     rcx, 0                          ;reset index to 0

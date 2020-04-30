@@ -10,9 +10,9 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global  ft_list_size
+global  _ft_list_size
 
-ft_list_size:                               ;rdi = begin_list address
+_ft_list_size:                              ;rdi = begin_list address
                 mov     rax, 0
                 cmp     rdi, 0
                 je      return

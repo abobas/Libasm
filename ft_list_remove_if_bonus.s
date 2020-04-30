@@ -10,10 +10,10 @@
 ;                                                                              ;
 ; **************************************************************************** ;
 
-global ft_list_remove_if
-extern free
+global _ft_list_remove_if
+extern _free
 
-ft_list_remove_if:                                          ; rdi = **begin_list, rsi = *data_ref, rdx = *strcmp
+_ft_list_remove_if:                                         ; rdi = **begin_list, rsi = *data_ref, rdx = *strcmp
                             push    rdi
                             cmp     rdi, 0                  ; check if begin_list pointer is not void
                             je      return
@@ -35,8 +35,8 @@ first_element:
                             jne     traverse
                             mov     r12, [rdi]              ; put current_element in register
                             mov     r14, [rdi + 8]          ; put next_element in register
-                            cmp     r14, 0
-                            je      empty_list
+                            cmp     r14, 0                  ; check if first and last element
+                            je      empty_list              ; if first and last element, jump empty_list
                             mov     r14, [r14]              ; dereference next_element
                             mov     r13, [rdi + 8]          ; put next_element in register
                             mov     [rdi], r14              ; make next_element begin_list pointer
@@ -46,7 +46,7 @@ first_element:
                             push    rsi
                             push    rdx
                             mov     rdi, r12                ; put old current_element in 1st argument
-                            call    free                    ; free old current_element
+                            call    _free                   ; free old current_element
                             pop     rdx
                             pop     rsi
                             pop     rdi
@@ -74,7 +74,7 @@ list_loop:
                             push    rsi
                             push    rdx
                             mov     rdi, r12                ; put old current_element in 1st argument
-                            call    free                    ; free old current_element
+                            call    _free                   ; free old current_element
                             pop     rdx
                             pop     rsi
                             pop     rdi                  
@@ -84,7 +84,7 @@ return:
                             ret
 empty_list:
                             mov     rdi, r12                ; put old current_element in 1st argument
-                            call    free                    ; free old current_element
+                            call    _free                   ; free old current_element
                             pop     rdi
                             mov     [rdi], r14
                             ret

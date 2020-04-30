@@ -6,7 +6,7 @@
 #    By: abobas <abobas@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/29 01:21:34 by abobas        #+#    #+#                  #
-#    Updated: 2020/04/29 01:21:34 by abobas        ########   odam.nl          #
+#    Updated: 2020/04/30 14:49:43 by abobas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,15 +31,15 @@ else
 OBJ_FILES = $(MAN_OBJ)
 endif
 
-FLAGS = -Wall -Werror -Wextra -no-pie
+FLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
 
 $(NAME): $(OBJ_FILES)
-	ar rcs -o $(NAME) $(OBJ_FILES)
+	ar rcs $(NAME) $(OBJ_FILES)
 
 %.o: %.s
-	nasm -f elf64 -o $@ $<
+	nasm -f macho64 -o $@ $<
 
 bonus: 
 	$(MAKE) WITH_BONUS=1 all
