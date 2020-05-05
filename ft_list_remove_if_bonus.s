@@ -6,7 +6,7 @@
 ;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
 ;    Created: 2020/04/30 15:00:56 by abobas        #+#    #+#                  ;
-;    Updated: 2020/04/30 15:00:56 by abobas        ########   odam.nl          ;
+;    Updated: 2020/05/05 13:34:13 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 
@@ -46,7 +46,9 @@ first_element:
                             push    rsi
                             push    rdx
                             mov     rdi, r12                ; put old current_element in 1st argument
+							push	rdi
                             call    _free                   ; free old current_element
+							pop		rdi
                             pop     rdx
                             pop     rsi
                             pop     rdi
@@ -74,7 +76,9 @@ list_loop:
                             push    rsi
                             push    rdx
                             mov     rdi, r12                ; put old current_element in 1st argument
+							push	rdi
                             call    _free                   ; free old current_element
+							pop		rdi
                             pop     rdx
                             pop     rsi
                             pop     rdi                  
@@ -84,7 +88,9 @@ return:
                             ret
 empty_list:
                             mov     rdi, r12                ; put old current_element in 1st argument
+							push	rdi
                             call    _free                   ; free old current_element
+							pop		rdi
                             pop     rdi
                             mov     [rdi], r14
                             ret

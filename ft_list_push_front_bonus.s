@@ -6,7 +6,7 @@
 ;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
 ;    Created: 2020/04/30 15:01:02 by abobas        #+#    #+#                  ;
-;    Updated: 2020/04/30 15:01:02 by abobas        ########   odam.nl          ;
+;    Updated: 2020/05/05 13:31:50 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 
@@ -20,7 +20,9 @@ _ft_list_push_front:                                    ; rdi = begin_list, rsi 
                         push        rsi
 allocate_element:
                         mov         rdi, 16             ; t_list = 16 bytes
+						push		rdi
                         call        _malloc             ; allocate new struct
+						pop			rdi
                         pop         rsi
                         pop         rdi
                         cmp         rax, 0              ; malloc protect
