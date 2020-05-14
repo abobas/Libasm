@@ -6,11 +6,11 @@
 #    By: abobas <abobas@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/30 15:01:10 by abobas        #+#    #+#                  #
-#    Updated: 2020/05/14 22:22:26 by abobas        ########   odam.nl          #
+#    Updated: 2020/05/14 22:24:51 by abobas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-global	_ft_atoi_base
+global    _ft_atoi_base
 
 _ft_atoi_base:											; rdi = string, rsi = base
 					mov		rbx, 0						; base length
@@ -46,9 +46,9 @@ base_check:
 					je		error
 					cmp		byte[rsi + rbx], 10			; '\n'
 					je		error
-					cmp		byte[rsi + rbx], 13 		; '\r'
+					cmp		byte[rsi + rbx], 13			; '\r'
 					je		error
-					cmp		byte[rsi + rbx], 11 		; '\v'
+					cmp		byte[rsi + rbx], 11			; '\v'
 					je		error
 					cmp		byte[rsi + rbx], 12			; '\f'
 					je		error
@@ -61,15 +61,15 @@ base_end:
 whitespace_inc:
 					inc		r12
 whitespace:
-					cmp		byte[rdi + r12], 32 		; ' '
+					cmp		byte[rdi + r12], 32			; ' '
 					je		whitespace_inc
 					cmp		byte[rdi + r12], 9			; '\t'
 					je		whitespace_inc
 					cmp		byte[rdi + r12], 10			; '\n'
 					je		whitespace_inc
-					cmp		byte[rdi + r12], 13 		; '\r'
+					cmp		byte[rdi + r12], 13			; '\r'
 					je		whitespace_inc
-					cmp		byte[rdi + r12], 11 		; '\v'
+					cmp		byte[rdi + r12], 11			; '\v'
 					je		whitespace_inc
 					cmp		byte[rdi + r12], 12			; '\f'
 					je		whitespace_inc
