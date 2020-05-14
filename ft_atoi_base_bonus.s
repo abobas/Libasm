@@ -6,7 +6,7 @@
 #    By: abobas <abobas@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/30 15:01:10 by abobas        #+#    #+#                  #
-#    Updated: 2020/05/14 22:12:37 by abobas        ########   odam.nl          #
+#    Updated: 2020/05/14 22:17:59 by abobas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -104,7 +104,7 @@ return_value:
 					imul	rax, rbx					; multiply total by baselength
 					jo		long_max					; jump if overflow
 					add		rax, r14					; add base char to return value
-					jmp		atoi_inc				
+					jmp		atoi_inc
 error:
 					mov		rax, 0
 					ret
