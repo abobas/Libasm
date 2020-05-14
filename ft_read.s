@@ -6,7 +6,7 @@
 ;    By: abobas <abobas@student.codam.nl>             +#+                      ;
 ;                                                    +#+                       ;
 ;    Created: 2020/04/30 15:00:31 by abobas        #+#    #+#                  ;
-;    Updated: 2020/04/30 15:00:31 by abobas        ########   odam.nl          ;
+;    Updated: 2020/05/14 20:48:46 by abobas        ########   odam.nl          ;
 ;                                                                              ;
 ; **************************************************************************** ;
 
@@ -19,8 +19,10 @@ _ft_read:                                   ; rdi = fd, rsi = bufferstring, rdx 
             jc          error               ; error sets carry flag, rax = errno
             ret
 error:
-			mov			r15, rax 			; save errno	
+			mov			r15, rax 			; save errno
+            push        r15
 			call		___error			; retrieve address to errno
+            pop         r15
 			mov			[rax], r15			; put errno in pointer to errno (return value of __error)
             mov         rax, -1
             ret
