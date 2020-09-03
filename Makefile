@@ -6,7 +6,7 @@
 #    By: abobas <abobas@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/04/29 01:21:34 by abobas        #+#    #+#                  #
-#    Updated: 2020/09/03 21:20:51 by abobas        ########   odam.nl          #
+#    Updated: 2020/09/03 21:31:17 by abobas        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,13 +27,15 @@ BON_SRC =	ft_atoi_base_bonus.o \
 			ft_list_sort_bonus.o \
 			ft_list_remove_if_bonus.o
 
+MAN_SRC :=		$(MAN_SRC:%=$(SRC_DIR)%)
+
+BON_SRC :=		$(BON_SRC:%=$(SRC_DIR)%)
+
 ifdef WITH_BONUS
 SRC_FILES = $(MAN_SRC) $(BON_SRC)
 else
 SRC_FILES = $(MAN_SRC)
 endif
-
-SRC_FILES :=		$(SRC_FILES:%=$(SRC_DIR)%)
 
 FLAGS = 	-Wall -Werror -Wextra
 
