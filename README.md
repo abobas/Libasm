@@ -12,7 +12,7 @@ The assignment consisted of reimplementing the following C functions in x64 asse
 - `read`
 - `strdup`
 
-The bonus consisted of implementing the following 42 Network's C functions in x64 assembly:
+The bonus assignment consisted of implementing the following 42 Network's C functions in x64 assembly:
 - `ft_atoi_base`
 - `ft_list_push_front`
 - `ft_list_size`
