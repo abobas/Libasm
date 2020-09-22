@@ -19,6 +19,6 @@ The bonus assignment consisted of implementing the following 42 Network's C func
 - `ft_list_sort`
 - `ft_list_remove_if`
 
-This project is written in Intel syntax and written for a BSD based system (read / write system calls).
+This project is written in Intel syntax and written for a BSD-based OS.
 
 I finished the project on 24/4/2020 with a grade of 125%.
